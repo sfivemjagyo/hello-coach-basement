@@ -1,0 +1,15 @@
+Requirements
+    AWS Account should create an IAM User that has an administrator access (initial - access)
+    A pre-created key pair that the EC2 will be using in order for us to troubleshoot in case something is wrong
+    Github account, please clone this repository for sample application (https://github.com/mjagyo/sample-app)
+    Create a github token for the terraform to initiate/create the webhooks
+
+    Create a file named terraform.tfvars, copy the content of terraform.tfvars.example for the configuration
+    Add the needed token and keys for the authentication
+
+    Codebuild should be authenticated to github manually
+
+    Though currently it still uses the PUSH event we can just change it to merge later on once the process has been approve
+
+    EBS is red because of its health check but we can just change it later for its health check
+
